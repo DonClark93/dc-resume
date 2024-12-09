@@ -2,35 +2,48 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './index.css'
+import Container from './layouts/Container'
+import AboutMe from './components/AboutMe'
+import Projects from './components/Projects'
+import WorkHistory from './components/WorkHistory'
+
 
 function App() {
+
   const [count, setCount] = useState(0)
+  const [activity,setActivity] = useState('null')
+
+  function updateView(val){
+    setActivity(val)
+  }
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 >Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-        <p className="text-3xl font-bold underline text-red-600">
-          text
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>
+        Donald Clark's Resume
+      </h1>
+      <br></br>
+      <br></br>
+      <h3>
+        Sections
+      </h3>
+      <ul>
+        <li onClick={() => updateView("about")}>
+          About Me
+        </li>
+        <li onClick={() => updateView("work")}>
+          Work History
+        </li>
+        <li onClick={() => updateView("projects")}>
+          Projects
+        </li>
+      </ul>
+      <br></br>
+      <br></br>
+      <Container>
+      <AboutMe></AboutMe>
+      </Container>
     </>
   )
 }
