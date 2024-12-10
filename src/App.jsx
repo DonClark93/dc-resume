@@ -2,27 +2,30 @@ import { useState } from 'react'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import './index.css'
-import Container from './layouts/Container'
-import AboutMe from './components/AboutMe'
-import Projects from './components/Projects'
-import WorkHistory from './components/WorkHistory'
-import Default from './components/Default'
+import Container from './layouts/Container.jsx'
+import AboutMe from './components/AboutMe.jsx'
+import Projects from './components/Projects.jsx'
+import WorkHistory from './components/WorkHistory.jsx'
+import Default from './components/Default.jsx'
 
 
 function App() {
 
   //const [count, setCount] = useState(0)
   const [activity,setActivity] = useState(Default)
-
+  const about = <AboutMe/>
+  const projects = <Projects/>
+  const work = <WorkHistory/>
+  
   function updateView(val){
     if(val == "about"){
-      setActivity(AboutMe)
+      setActivity(about)
     }
     if(val == "work"){
-      setActivity(WorkHistory)
+      setActivity(work)
     }
     if(val == "projects"){
-      setActivity(Projects)
+      setActivity(projects)
     }
   }
 
@@ -50,9 +53,8 @@ function App() {
       </ul>
       <br></br>
       <br></br>
-      <Container>
-      {activity}
-      </Container>
+      <Container activity={activity}/>
+      
     </>
   )
 }

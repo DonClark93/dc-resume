@@ -1,9 +1,6 @@
-function Container({children}){
+export default function Container(props){
     return(
-        <>
-            {children}
-        </>
+        <>{props.activity}</>
     )
 }
 
-export default Container

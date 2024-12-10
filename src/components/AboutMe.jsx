@@ -1,7 +1,5 @@
-function AboutMe(){
+export default function AboutMe(){
     return(
         <>about Me</>
     )
 }
-
-export default AboutMe

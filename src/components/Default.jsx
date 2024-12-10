@@ -1,7 +1,6 @@
-function Default(){
+export default function Default(){
     return(
         <>Default</>
     )
 }
 
-export default Default
