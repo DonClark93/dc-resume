@@ -1,27 +1,36 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+//import reactLogo from './assets/react.svg'
+//import viteLogo from '/vite.svg'
 import './index.css'
 import Container from './layouts/Container'
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import WorkHistory from './components/WorkHistory'
+import Default from './components/Default'
 
 
 function App() {
 
-  const [count, setCount] = useState(0)
-  const [activity,setActivity] = useState('null')
+  //const [count, setCount] = useState(0)
+  const [activity,setActivity] = useState(Default)
 
   function updateView(val){
-    setActivity(val)
+    if(val == "about"){
+      setActivity(AboutMe)
+    }
+    if(val == "work"){
+      setActivity(WorkHistory)
+    }
+    if(val == "projects"){
+      setActivity(Projects)
+    }
   }
 
 
   return (
     <>
       <h1>
-        Donald Clark's Resume
+        Donald Clark&#39;s Resume
       </h1>
       <br></br>
       <br></br>
@@ -42,7 +51,7 @@ function App() {
       <br></br>
       <br></br>
       <Container>
-      <AboutMe></AboutMe>
+      {activity}
       </Container>
     </>
   )
