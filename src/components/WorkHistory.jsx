@@ -2,7 +2,13 @@ export default function WorkHistory() {
     return(
         <>
             <h1>YALE NEW HAVEN HOSPITAL</h1>
-            <h2>Application Analyst</h2>
+            <h2>Application Analyst - Clinical Imaging Technologies</h2>
+            <h3>2019-2021</h3>
+            <p>
+            Add stuff later
+            </p>
+            <br/>
+            <h2>Application Analyst - Phynd Application/Web Solutions</h2>
             <h3>2019-2021</h3>
             <p>
             As an Application Analyst, I was responsible for maintaining and updating 
