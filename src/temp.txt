@@ -1,0 +1,33 @@
+- Tailwind
+
+{ 'sea_green': { DEFAULT: '#09814a', 100: '#021a0f', 200: '#04331e', 300: '#054d2d', 400: '#07673c', 500: '#09814a', 600: '#0ec673', 700: '#2ef099', 800: '#74f5bb', 900: '#b9fadd' }, 'gunmetal': { DEFAULT: '#272d2d', 100: '#080909', 200: '#0f1111', 300: '#171a1a', 400: '#1e2323', 500: '#272d2d', 600: '#4e5959', 700: '#768787', 800: '#a3afaf', 900: '#d1d7d7' }, 'saffron': { DEFAULT: '#f9c846', 100: '#3e2e02', 200: '#7d5c04', 300: '#bb8b06', 400: '#f7b80a', 500: '#f9c846', 600: '#fad56d', 700: '#fcdf91', 800: '#fdeab6', 900: '#fef4da' }, 'slate_blue': { DEFAULT: '#7067cf', 100: '#120f2f', 200: '#231e5f', 300: '#352d8e', 400: '#473cbd', 500: '#7067cf', 600: '#8d86d9', 700: '#a9a4e2', 800: '#c6c3ec', 900: '#e2e1f5' }, 'amaranth_purple': { DEFAULT: '#a4243b', 100: '#21070c', 200: '#410e18', 300: '#621523', 400: '#821d2f', 500: '#a4243b', 600: '#d23350', 700: '#dd667c', 800: '#e999a8', 900: '#f4ccd3' } }
+
+- CSV
+
+09814a,272d2d,f9c846,7067cf,a4243b
+
+- With #
+
+#09814a, #272d2d, #f9c846, #7067cf, #a4243b
+
+- Array
+
+["09814a","272d2d","f9c846","7067cf","a4243b"]
+
+- Object
+
+{"Sea green":"09814a","Gunmetal":"272d2d","Saffron":"f9c846","Slate blue":"7067cf","Amaranth purple":"a4243b"}
+
+- Extended Array
+
+[{"name":"Sea green","hex":"09814a","rgb":[9,129,74],"cmyk":[93,0,43,49],"hsb":[153,93,51],"hsl":[153,87,27],"lab":[47,-43,22]},{"name":"Gunmetal","hex":"272d2d","rgb":[39,45,45],"cmyk":[13,0,0,82],"hsb":[180,13,18],"hsl":[180,7,16],"lab":[18,-3,-1]},{"name":"Saffron","hex":"f9c846","rgb":[249,200,70],"cmyk":[0,20,72,2],"hsb":[44,72,98],"hsl":[44,94,63],"lab":[83,5,68]},{"name":"Slate blue","hex":"7067cf","rgb":[112,103,207],"cmyk":[46,50,0,19],"hsb":[245,50,81],"hsl":[245,52,61],"lab":[49,30,-53]},{"name":"Amaranth purple","hex":"a4243b","rgb":[164,36,59],"cmyk":[0,78,64,36],"hsb":[349,78,64],"hsl":[349,64,39],"lab":[37,52,19]}]
+
+- XML
+
+<palette>
+  <color name="Sea green" hex="09814a" r="9" g="129" b="74" />
+  <color name="Gunmetal" hex="272d2d" r="39" g="45" b="45" />
+  <color name="Saffron" hex="f9c846" r="249" g="200" b="70" />
+  <color name="Slate blue" hex="7067cf" r="112" g="103" b="207" />
+  <color name="Amaranth purple" hex="a4243b" r="164" g="36" b="59" />
+</palette>
