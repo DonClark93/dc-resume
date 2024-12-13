@@ -30,4 +30,4 @@
   <color name="Saffron" hex="f9c846" r="249" g="200" b="70" />
   <color name="Slate blue" hex="7067cf" r="112" g="103" b="207" />
   <color name="Amaranth purple" hex="a4243b" r="164" g="36" b="59" />
-</palette>
+</palette>8
