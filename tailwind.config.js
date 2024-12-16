@@ -5,8 +5,8 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
+    extend: {
+      colors: {
       'sea_green': {
         DEFAULT: '#09814a', 
         100: '#021a0f', 
@@ -68,6 +68,7 @@ export default {
         900: '#f4ccd3'
       }
     }
+    },
   },
   plugins: [],
 }

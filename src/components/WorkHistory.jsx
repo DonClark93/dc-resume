@@ -1,9 +1,9 @@
 export default function WorkHistory() {
     return(
-        <>
+        <div className="text-slate-200">
             <h1>YALE NEW HAVEN HOSPITAL</h1>
             <h2>Application Analyst - Clinical Imaging Technologies</h2>
-            <h3>2019-2021</h3>
+            <h3>Current</h3>
             <p>
             Add stuff later
             </p>
@@ -21,7 +21,7 @@ export default function WorkHistory() {
             needs like team collaboration and data analysis.  
             </p>
             <br/>
-            <h2>Senior Service Desk Analyst</h2>
+            <h2>Senior Service Desk Analyst - Service Desk</h2>
             <h3>2016-2019</h3>
             <p>
             During my tenure as a Senior Service Desk Analyst at YNHH, I provided 
@@ -44,6 +44,7 @@ export default function WorkHistory() {
             </p>
             <br/>
             <h1>RICOH</h1>
+            <h2>Technician</h2>
             <h3>2014-2016</h3>
             <p>
             From October 2014 to March 2016, I served as a Copier Repair Technician 
@@ -58,6 +59,6 @@ export default function WorkHistory() {
             rebuilding and replacing printer components, upgrading PCB boards, and 
             handling expansion cards for networking and interfacing enhancements.
             </p>
-        </>
+        </div>
     )
 }

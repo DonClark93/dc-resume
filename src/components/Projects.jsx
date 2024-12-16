@@ -1,6 +1,6 @@
 export default function Projects(){
     return(
-        <>
+        <div className="text-slate-200">
         <h1>Projects</h1>
         <h3>What I can talk about</h3>
         <ul>
@@ -12,6 +12,6 @@ export default function Projects(){
         <ul>
             <li>Comming soon</li>
         </ul>
-        </>
+        </div>
     )
 }

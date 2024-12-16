@@ -1,6 +1,6 @@
 export default function Container(props){
     return(
-        <>{props.activity}</>
+        <div className="container mx-auto">{props.activity}</div>
     )
 }
 

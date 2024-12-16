@@ -31,31 +31,28 @@ function App() {
 
 
   return (
-    <>
-      <h1>
+    <div className="min-h-screen bg-gunmetal">
+      <div className="flex justify-center text-6xl text-slate-200">
         Donald Clark&#39;s Resume
-      </h1>
+      </div>
       <br></br>
       <br></br>
-      <h3>
-        Sections
-      </h3>
-      <ul>
-        <li onClick={() => updateView("about")}>
-          About Me
-        </li>
-        <li onClick={() => updateView("work")}>
-          Work History
-        </li>
-        <li onClick={() => updateView("projects")}>
+      <div className="flex text-4xl justify-around">
+        <div className="  text-slate-200" onClick={() => updateView("projects")}>
           Projects
-        </li>
-      </ul>
+        </div>
+        <div className="  text-slate-200" onClick={() => updateView("work")}>
+          Work History
+        </div>
+        <div className="  text-slate-200" onClick={() => updateView("about")}>
+          About Me
+        </div>
+      </div>
       <br></br>
       <br></br>
       <Container activity={activity}/>
       
-    </>
+    </div>
   )
 }
 
