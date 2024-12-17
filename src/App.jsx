@@ -39,16 +39,9 @@ function App() {
       <br></br>
       <br></br>
       <div className="flex text-4xl justify-around">
-        <ResumeButton updateView={updateView} activity={"test"}></ResumeButton>
-        <div className="  text-slate-200" onClick={() => updateView("projects")}>
-          Projects
-        </div>
-        <div className="  text-slate-200" onClick={() => updateView("work")}>
-          Work History
-        </div>
-        <div className="  text-slate-200" onClick={() => updateView("about")}>
-          About Me
-        </div>
+        <ResumeButton updateView={updateView} text={"Projects"} activity={"projects"}/>
+        <ResumeButton updateView={updateView} text={"Work History"} activity={"work"}/>
+        <ResumeButton updateView={updateView} text={"About Me"} activity={"about"}/>
       </div>
       <br></br>
       <br></br>
