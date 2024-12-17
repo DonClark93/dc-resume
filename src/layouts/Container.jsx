@@ -1,6 +1,6 @@
-export default function Container(props){
+export default function Container({children}){
     return(
-        <div className="container mx-auto">{props.activity}</div>
+        <div className="container mx-auto">{children}</div>
     )
 }
 

@@ -45,7 +45,9 @@ function App() {
       </div>
       <br></br>
       <br></br>
-      <Container activity={activity}/>
+      <Container >
+      {activity}
+      </Container>
       
     </div>
   )
