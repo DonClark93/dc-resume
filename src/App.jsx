@@ -7,6 +7,7 @@ import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Projects.jsx'
 import WorkHistory from './components/WorkHistory.jsx'
 import Default from './components/Default.jsx'
+import ResumeButton from "./components/ResumeButton.jsx"
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <br></br>
       <br></br>
       <div className="flex text-4xl justify-around">
+        <ResumeButton updateView={updateView} activity={"test"}></ResumeButton>
         <div className="  text-slate-200" onClick={() => updateView("projects")}>
           Projects
         </div>
