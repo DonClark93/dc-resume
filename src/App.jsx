@@ -8,11 +8,11 @@ import Projects from './components/Projects.jsx'
 import WorkHistory from './components/WorkHistory.jsx'
 import Default from './components/Default.jsx'
 import ResumeButton from "./components/ResumeButton.jsx"
-
+import Header from "./components/Header.jsx"
+import Footer from "./components/Footer.jsx"
 
 function App() {
 
-  //const [count, setCount] = useState(0)
   const [activity,setActivity] = useState(Default)
   const about = <AboutMe/>
   const projects = <Projects/>
@@ -32,23 +32,23 @@ function App() {
 
 
   return (
-    <div className="min-h-screen bg-gunmetal">
-      <div className="flex justify-center text-6xl text-slate-200">
-        Donald Clark&#39;s Resume
-      </div>
-      <br></br>
-      <br></br>
+    <div className="min-h-screen bg-gunmetal-400">
+      <Header/>
+      <br/>
+      <br/>
       <div className="flex text-4xl justify-around">
         <ResumeButton updateView={updateView} text={"Projects"} activity={"projects"}/>
         <ResumeButton updateView={updateView} text={"Work History"} activity={"work"}/>
         <ResumeButton updateView={updateView} text={"About Me"} activity={"about"}/>
       </div>
-      <br></br>
-      <br></br>
+      <br/>
+      <br/>
       <Container >
       {activity}
       </Container>
-      
+      <br/>
+      <br/>
+      <Footer className="object-center absolute bottom-0 right-1/2 " />
     </div>
   )
 }
