@@ -35,7 +35,6 @@ function App() {
     <div className="min-h-screen bg-gunmetal-400">
       <Header/>
       <br/>
-      <br/>ß
       <br/>
       <div className="flex text-4xl justify-around">
         <ResumeButton updateView={updateView} text={"Projects"} activity={"projects"}/>
