@@ -14,6 +14,7 @@ import Footer from "./components/Footer.jsx"
 function App() {
 
   const [activity,setActivity] = useState(Default)
+  
   const about = <AboutMe/>
   const projects = <Projects/>
   const work = <WorkHistory/>
@@ -44,7 +45,7 @@ function App() {
       <br/>
       <br/>
       <Container >
-      {activity}
+        {activity}
       </Container>
       <br/>
       <br/>
