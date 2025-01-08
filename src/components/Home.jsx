@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Outlet, Link } from 'react-router'
 
 import Container from '../layouts/Container'
 import AboutMe from './AboutMe.jsx'
@@ -27,25 +28,27 @@ export default function Home () {
         setActivity(projects)
         }
     }
-    
+
     return(
+        
         <div className="min-h-screen bg-gunmetal-400">
-              <Header/>
-              <br/>
-              <br/>
-              <div className="flex text-4xl justify-around">
-                <ResumeButton updateView={updateView} text={"Projects"} activity={"projects"}/>
-                <ResumeButton updateView={updateView} text={"Work History"} activity={"work"}/>
-                <ResumeButton updateView={updateView} text={"About Me"} activity={"about"}/>
-              </div>
-              <br/>
-              <br/>
-              <Container >
-                {activity}
-              </Container>
-              <br/>
-              <br/>
-              <Footer className="object-center absolute bottom-0 right-1/2 " />
+            <Header/>
+            <br/>
+            <br/>
+            <div className="flex text-4xl justify-around">
+            <ResumeButton updateView={updateView} text={"Projects"} activity={"projects"}/>
+            <ResumeButton updateView={updateView} text={"Work History"} activity={"work"}/>
+            <ResumeButton updateView={updateView} text={"About Me"} activity={"about"}/>
             </div>
+            <br/>
+            <br/>
+            <Container >
+            <Outlet />
+            </Container>
+
+            <br/>
+            <br/>
+            <Footer className="object-center absolute bottom-0 right-1/2 " />
+        </div>
     )
 }

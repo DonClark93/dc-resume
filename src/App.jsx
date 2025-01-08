@@ -1,13 +1,23 @@
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
+import { Routes, Route } from 'react-router'
 import './index.css'
 import Home from './components/Home'
-import { Routes, Route } from 'react-router'
+import AboutMe from './components/AboutMe'
+import Projects from './components/Projects.jsx'
+import WorkHistory from './components/WorkHistory.jsx'
+import GameScreen from './components/pokeguess/GameScreen'
+
 
 function App() {
   return (
     <Routes>
-      <Route index element={<Home />} />
+      <Route path="/" element={<Home />} >
+        <Route path="about" element={<AboutMe/>}/>
+        <Route path="work" element={<WorkHistory/>}/>
+        <Route path="projects" element={<Projects/>}/>
+      </Route>
+      <Route path="pokeguess" element={<GameScreen/>}></Route>
     </Routes>
   )
 }
