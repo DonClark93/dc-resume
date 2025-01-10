@@ -42,6 +42,7 @@ export default function Home () {
             </div>
             <br/>
             <br/>
+            <Link to="pokeguess">click</Link>
             <Container >
             <Outlet />
             </Container>
