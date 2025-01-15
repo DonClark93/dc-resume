@@ -1,14 +1,19 @@
 import GuessContainer from "./GuessContainer"
 import ChanceContainer from "./ChanceContainer"
+import PokeContainer from "./PokeContainer"
 
 export default function GameScreen (){
     return(
         <div className="h-screen grid grid-cols-2 grid-rows-2 gap-1">
             <div className="text-3xl bg-gray-600 text-center" >
-                Who's that Pokemon?
+                <div>Who's that Pokemon?</div>
+                <div className="h-full flex items-center justify-center gap-4">
+                    <PokeContainer></PokeContainer>
+                </div>
+                
             </div>
-            <div className="bg-blue-500 row-span-2" > 
-                <div className="text-3xl text-center pb-5">Guesses</div>
+            <div className="flex flex-col bg-blue-500 row-span-2" > 
+                <div className="flex-grow text-3xl text-center pb-5">Guesses</div>
                 <GuessContainer></GuessContainer>
             </div>
             <div className="flex flex-col bg-yellow-500" >

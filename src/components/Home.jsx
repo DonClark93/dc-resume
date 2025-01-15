@@ -11,23 +11,10 @@ import Header from "./Header.jsx"
 import Footer from "./Footer.jsx"
 
 export default function Home () {
-    const [activity,setActivity] = useState(Default)
-  
-    const about = <AboutMe/>
-    const projects = <Projects/>
-    const work = <WorkHistory/>
-  
-    function updateView(val){
-        if(val == "about"){
-        setActivity(about)
-        }
-        if(val == "work"){
-        setActivity(work)
-        }
-        if(val == "projects"){
-        setActivity(projects)
-        }
-    }
+    
+    
+    console.log(<Outlet/>)
+   
 
     return(
         
@@ -36,15 +23,15 @@ export default function Home () {
             <br/>
             <br/>
             <div className="flex text-4xl justify-around">
-            <ResumeButton updateView={updateView} text={"Projects"} activity={"projects"}/>
-            <ResumeButton updateView={updateView} text={"Work History"} activity={"work"}/>
-            <ResumeButton updateView={updateView} text={"About Me"} activity={"about"}/>
+            <ResumeButton text={"Projects"} activity={"projects"}/>
+            <ResumeButton text={"Work History"} activity={"work"}/>
+            <ResumeButton text={"About Me"} activity={"about"}/>
             </div>
             <br/>
             <br/>
             <Link to="pokeguess">click</Link>
             <Container >
-            <Outlet />
+            <Outlet /> 
             </Container>
 
             <br/>

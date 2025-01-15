@@ -8,9 +8,9 @@ export default function Projects(){
             <li>Autoprotocol</li>
             <li>PowerApp</li>
         </ul>
-        <h3>What I can Show(need to make stuff for git</h3>
+        <h3>What I can Show</h3>
         <ul>
-            <li>Comming soon</li>
+            <li>PokeGuesser</li>
         </ul>
         </div>
     )
