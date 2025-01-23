@@ -6,7 +6,7 @@ export default function Header() {
         <div className="pb-8 sticky top-0   bg-gradient-to-b from-slate_blue-200  from-80% ">
             <div className="flex justify-evenly py-1">
                     <Link className=" w-28 h-28 rounded-full" to="/"><img className="w-28 h-28 rounded-full" src={MyLogo}/></Link>
-                    <div className=" text-4xl text-slate-200 content-center">
+                    <div className=" text-4xl font-black text-slate-300 content-center">
                         Donald Clark&#39;s Resume
                     </div>
             </div>
