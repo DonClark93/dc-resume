@@ -16,17 +16,15 @@ export default function Home () {
 
     return(
         
-        <div className="min-h-screen bg-gunmetal-400">
+        <div className="min-h-screen bg-slate_blue-300">
             <Header/>
-            <br/>
-            <br/>
-            <div className="flex text-4xl justify-around">
+
+            <div className="  flex text-4xl justify-around">
             <ResumeButton text={"Projects"} activity={"projects"}/>
             <ResumeButton text={"Work History"} activity={"work"}/>
             <ResumeButton text={"About Me"} activity={"about"}/>
             </div>
-            <br/>
-            <br/>
+
             <Link to="pokeguess">click</Link>
             <Container >
             <Outlet /> 

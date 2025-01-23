@@ -3,12 +3,12 @@ import { Link } from 'react-router'
 
 export default function Header() {
     return(
-        <div className="sticky top-0  bg-gunmetal-400">
-            <div className="flex justify-center ">
-                <Link className="w-24 h-24 rounded-full" to="/"><img className="w-24 h-24 rounded-full" src={MyLogo}/></Link>
-                <div className="text-2xl px-14 md:text-5xl text-slate-200 content-center">
-                    Donald Clark&#39;s Resume
-                </div>
+        <div className="pb-8 sticky top-0   bg-gradient-to-b from-slate_blue-200  from-80% ">
+            <div className="flex justify-evenly py-1">
+                    <Link className=" w-28 h-28 rounded-full" to="/"><img className="w-28 h-28 rounded-full" src={MyLogo}/></Link>
+                    <div className=" text-4xl text-slate-200 content-center">
+                        Donald Clark&#39;s Resume
+                    </div>
             </div>
         </div>
     )

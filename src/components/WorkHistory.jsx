@@ -1,16 +1,16 @@
 export default function WorkHistory() {
     return(
         <div className="text-slate-200">
-            <h1>YALE NEW HAVEN HOSPITAL</h1>
-            <h2>Application Analyst - Clinical Imaging Technologies</h2>
-            <h3>Current</h3>
-            <p>
+            <div>YALE NEW HAVEN HOSPITAL</div>
+            <div>Application Analyst - Clinical Imaging Technologies</div>
+            <div>Current</div>
+            <p className="text-base">
             Add stuff later
             </p>
             <br/>
-            <h2>Application Analyst - Phynd Application/Web Solutions</h2>
-            <h3>2019-2021</h3>
-            <p>
+            <div>Application Analyst - Phynd Application/Web Solutions</div>
+            <div>2019-2021</div>
+            <p className="text-base">
             As an Application Analyst, I was responsible for maintaining and updating 
             demographic information for both internal and external healthcare providers, 
             which is crucial for medical and outreach activities across the organization.  
@@ -21,9 +21,9 @@ export default function WorkHistory() {
             needs like team collaboration and data analysis.  
             </p>
             <br/>
-            <h2>Senior Service Desk Analyst - Service Desk</h2>
-            <h3>2016-2019</h3>
-            <p>
+            <div>Senior Service Desk Analyst - Service Desk</div>
+            <div>2016-2019</div>
+            <p className="text-base">
             During my tenure as a Senior Service Desk Analyst at YNHH, I provided 
             First and Second Tier support to approximately 30,000 users, including 
             vendors and medical community practices. My responsibilities included 
@@ -43,10 +43,10 @@ export default function WorkHistory() {
             Information (PII).
             </p>
             <br/>
-            <h1>RICOH</h1>
-            <h2>Technician</h2>
-            <h3>2014-2016</h3>
-            <p>
+            <div>RICOH</div>
+            <div>Technician</div>
+            <div>2014-2016</div>
+            <p className="text-base">
             From October 2014 to March 2016, I served as a Copier Repair Technician 
             for Ricoh, managing the Northern Westchester territory. My responsibilities 
             included servicing Multi-Function Printers, scanners, and faxes across both 
